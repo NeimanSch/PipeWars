@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>FedEx</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			canvas {
+				cursor: default;
+				outline: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div align="center" id="embed-com.wsp.fedex.GwtDefinition"></div>
+		<script type="text/javascript" src="com.wsp.fedex.GwtDefinition/com.wsp.fedex.GwtDefinition.nocache.js"></script>
+	</body>
+	
+	<script>
+		function handleMouseDown(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = 'default';
+		}
+		
+		function handleMouseUp(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = '';
+		}
+		
+		document.getElementById('embed-com.wsp.fedex.GwtDefinition').addEventListener('mousedown', handleMouseDown, false);
+		document.getElementById('embed-com.wsp.fedex.GwtDefinition').addEventListener('mouseup', handleMouseUp, false);
+	</script>
+</html>
